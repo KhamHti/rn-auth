@@ -34,7 +34,7 @@ const Login = ({ navigation }) => {
           onChangeText={(text) => setPassword(text)}
         />
 
-        <Button title="Login" />
+        <Button title="Login" onPress={() => navigation.navigate("HomeScreen")} />
         <View style={{ flexDirection: "row", marginTop: 20 }}>
           <Text>Don't have an account?</Text>
           <TouchableOpacity
